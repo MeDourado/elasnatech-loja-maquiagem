@@ -1,4 +1,7 @@
-import { Header } from "../../components/index";
+import { Navbar, Propaganda } from "../../components/index.js";
 
 const header = document.querySelector("header");
-header.innerHTML = Header();
+header.innerHTML = Navbar();
+
+const propaganda = document.querySelector(".propaganda");
+propaganda.innerHTML = Propaganda();

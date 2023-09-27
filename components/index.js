@@ -1,3 +1,4 @@
-import { Header } from "./Header";
+import { Navbar } from "./Navbar.js";
+import { Propaganda } from "./Propaganda.js";
 
-export { Header };
+export { Navbar, Propaganda };

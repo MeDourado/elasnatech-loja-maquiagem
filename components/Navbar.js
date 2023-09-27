@@ -1,6 +1,6 @@
-export const Header = () => {
-  return `<header>
-  <img src="./assets/img/logo.png" class="logo">
+export const Navbar = () => {
+  return `
+  <img src="../../assets/imgs/logo.png" class="logo">
   <nav>
       <ul >
           <li> <a href="index.html"> HOME </a> </li>
@@ -10,5 +10,5 @@ export const Header = () => {
           <li class="login"> <a href="#"> LOGIN </a> </li>
       </ul> 
   </nav>
-</header>`;
+  `;
 };
