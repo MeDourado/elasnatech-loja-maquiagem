@@ -37,7 +37,15 @@ header {
     width: 100%;
 }
 
-.cards-sobre {
+.headerativo {
+    background: linear-gradient(45deg, #7d8fc2,#a289c6,#e7a0e7,#fcc0de );
+    background-size: 250% 250%;
+    animation: fundogradiente 14s ease infinite;
+    padding-bottom: 10px;
+}
+
+
+.cards-sobre, footer {
     margin-left:80px;
     margin-right: 80px;
     margin-top: 25px;
@@ -79,4 +87,52 @@ nav li a:hover {
 header img {
     width: 130px;
     animation: pulse 2s  infinite;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom:0;
+    padding-bottom: 50px;
+}
+footer img {
+    width: 150px;
+}
+
+footer div, footer div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+/* Seta para saber que tem que descer ou subir */
+/* TESTES */
+.seta {
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    animation: puloSeta 1s linear infinite;
+}
+
+.seta-cima {
+    transform: scaleY(-1);
+}
+
+.seta.seta-cima {
+    animation: puloSetaInvertida 1s linear infinite;
+}
+
+@keyframes puloSeta {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+}
+
+@keyframes puloSetaInvertida {
+    0%, 100% { transform: translateY(0) scaleY(-1); }
+    50% { transform: translateY(5px) scaleY(-1); }
 }

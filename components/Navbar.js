@@ -3,11 +3,11 @@ export const Navbar = () => {
   <img src="../../assets/imgs/logo.png" class="logo">
   <nav>
       <ul >
-          <li> <a href="index.html"> HOME </a> </li>
-          <li> <a href="./pages/produtos.html"> PRODUTOS </a> </li>
-          <li> <a href="./pages/sobre.html"> SOBRE </a> </li>
-          <li> <a href="./pages/contato.html"> CONTATO </a> </li>
-          <li class="login"> <a href="#"> LOGIN </a> </li>
+          <li> <a href="../Home/index.html"> HOME </a> </li>
+          <li> <a href="../Produtos/index.html"> PRODUTOS </a> </li>
+          <li> <a href="../Sobre/index.html"> SOBRE </a> </li>
+          <li> <a href="../Contato/index.html"> CONTATO </a> </li>
+          <li class="login"> <a href="../Login/index.html"> LOGIN </a> </li>
       </ul> 
   </nav>
   `;

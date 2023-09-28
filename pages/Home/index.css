@@ -119,10 +119,10 @@ input:hover, input:active {
 .container-sobre {  
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 15px;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    gap: 35px;
     height: 100vh;
 }
 
@@ -130,24 +130,36 @@ input:hover, input:active {
     font-size: 2.1rem;
     background-image: linear-gradient(45deg, #7d8fc2, #a289c6, #e7a0e7, #fcc0de);
     -webkit-background-clip: text; 
+    background-size: 250% 250%;
+    animation: fundogradiente 14s ease infinite;
     background-clip: text; 
     color: transparent;
     font-weight: 900;
-    margin-top: 70px;
 }
 
 .cards-sobre {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+
 }
 
 .card-sobre {
-    padding-top: 20px;
-    border-radius: 7px;
-    background: #a289c6;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);    width: 300px;
-    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #7d8fc2,#a289c6,#e7a0e7,#fcc0de );
+    background-size: 250% 250%;
+    animation: fundogradiente 14s ease infinite;
+    box-shadow: 0px 4px 4px 5px rgba(2, 0, 0, 0.074);    
+    width: 300px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-diferente {
+    margin-top: -50px;
+    width: 320px;
+    height: 410px;
 }
 
 .card-sobre h3 {
@@ -155,17 +167,4 @@ input:hover, input:active {
     font-weight: 800;
 }
 
-/* TESTES */
-#botao {
-    height: 50px;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    animation: puloSeta 1s linear infinite;
-    transform: translateX(-50%);
-}
-@keyframes puloSeta {
-    from {transform: translateY(-15px);}
-    50% {transform: translateY(0);}
-    to {transform: translateY(-15px);}
-}
+
