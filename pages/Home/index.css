@@ -5,7 +5,9 @@
     justify-content: space-between;
     align-items:flex-end;
     height: 100vh;
+    overflow-x: hidden;
 }
+
 
 .propaganda {
     width: 650px;
@@ -15,9 +17,6 @@
     margin-bottom: 40px;
 }
 
-.img-propaganda {    
-    height: 530px;  
-}
 
 .propaganda h4 {
     text-align: left;
@@ -120,10 +119,12 @@ input:hover, input:active {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 15px;
+    padding: 20px 0 20px 0;
+    gap: 80px;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    height: 100vh;
+    height: auto;
+
 }
 
 .container-sobre h2 {
@@ -140,7 +141,6 @@ input:hover, input:active {
 .cards-sobre {
     display: flex;
     justify-content: space-between;
-
 }
 
 .card-sobre {
@@ -149,7 +149,7 @@ input:hover, input:active {
     background-size: 250% 250%;
     animation: fundogradiente 14s ease infinite;
     box-shadow: 0px 4px 4px 5px rgba(2, 0, 0, 0.074);    
-    width: 300px;
+    width: 270px;
     height: 380px;
     display: flex;
     flex-direction: column;
@@ -168,3 +168,160 @@ input:hover, input:active {
 }
 
 
+/* Responsividade */
+
+@media screen and (max-width: 1060px) {
+    .container-propaganda {
+        margin-top: 170px;
+        height: auto;
+        align-items:flex-end;
+    }
+   .img-propaganda {
+    height: 350px;
+   }
+   .propaganda {
+    width: 450px;
+   }
+   .propaganda h2 {
+    font-size: 1.7rem;
+   }
+   .propaganda h4 {
+    font-size: 1rem;
+   }
+   .container-caracteristicas div img {
+    padding-top: 0px;
+    max-height: 50px;
+}
+.container-input-botao {
+    width: 340px;
+}
+.card-sobre {
+    width: 260px;
+}
+
+}
+
+@media screen and (max-width:939px){
+    .img-propaganda {
+        height: 310px;
+       }
+       .propaganda h2 {
+        font-size: 1.4rem;
+       }
+       .propaganda h4 {
+        font-size: .8rem;
+       }
+       .card-sobre {
+        width: 220px;
+        height: 310px ;
+    }
+}
+
+@media screen and (max-width:870px){
+    .propaganda, .container-caracteristicas {
+        width: 340px;
+    }
+
+    .img-propaganda {
+        height: 290px;
+       }
+    .propaganda h2 {
+        font-size: 1.6rem;
+       }
+    .propaganda h4 {
+        font-size: .8rem;
+       }
+    .container-caracteristicas div img {
+        padding-top: 0px;
+        max-height: 40px;
+    }
+    .cards-sobre {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap:30px
+    }
+
+    .card-diferente {
+        margin-top: 0;
+    }
+
+    .container-sobre {
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width:830px){
+    .propaganda {
+        width: auto;
+    }
+    .container-caracteristicas {
+        width: 500px;
+    }
+    .img-propaganda {
+        display: none;
+    }
+    .propaganda h2 {
+        font-size: 2.2rem;
+       }
+    .propaganda h4 {
+        font-size: 1.3rem;
+    }
+    .container-caracteristicas div img {
+        max-height: 90px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:670px){
+    .container-caracteristicas {
+        width:100%;
+    }
+    .propaganda {
+        align-items: center;
+    }
+    .propaganda, .container-caracteristicasm .container-input-botao {
+        width: max-content;
+    }
+    .container-input-botao button {
+        display: none;
+    }
+    .container-propaganda {
+        margin-right:50px;
+        margin-left:50px;
+    }
+   
+}
+
+@media screen and (max-width:590px){
+    .container-caracteristicas {
+        flex-direction: column;
+        align-items: center;
+        gap:40px;
+    }   
+    .propaganda h2 {
+        font-size: 1.8rem;
+       }
+    .propaganda h4 {
+        font-size: 1.1rem;
+    }
+
+    .container-caracteristicas div img {
+        max-height: 150px;
+    }
+    
+}
+
+@media screen and (max-width:450px){
+    .container-propaganda {
+        margin-right:30px;
+        margin-left:30px;
+    }
+
+    .container-input-botao  {
+        width: 250px;
+    }
+}

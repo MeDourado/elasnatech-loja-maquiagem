@@ -4,6 +4,7 @@ import {
   Footer,
   Seta,
   SobreMarca,
+  ImgPropaganda,
 } from "../../components/index.js";
 
 const header = document.querySelector("header");
@@ -20,3 +21,6 @@ seta.innerHTML = Seta();
 
 const sobreMarca = document.querySelector(".container-sobre");
 sobreMarca.innerHTML = SobreMarca();
+
+const imgPropaganda = document.querySelector(".container-img-propaganda");
+imgPropaganda.innerHTML = ImgPropaganda();

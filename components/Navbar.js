@@ -1,6 +1,9 @@
 export const Navbar = () => {
   return `
+  <div>
   <img src="../../assets/imgs/logo.png" class="logo">
+  <a class="iconemenu" onclick="mostrarMenu()"><img src="../../assets/imgs/icone-menu.png"></a>
+  </div>
   <nav>
       <ul >
           <li> <a href="../Home/index.html"> HOME </a> </li>

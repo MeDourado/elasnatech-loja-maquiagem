@@ -7,14 +7,18 @@
     font-family: 'Nunito', sans-serif;
     color:white;
     font-weight: 600;
+
 }
 
 body {
-    height: 100vh;
+    overflow-x: hidden;
+    height: auto;
     background: linear-gradient(45deg, #7d8fc2,#a289c6,#e7a0e7,#fcc0de );
     background-size: 250% 250%;
     animation: fundogradiente 14s ease infinite;
+    
 }
+
 
 @keyframes fundogradiente  {
     0% {
@@ -31,10 +35,17 @@ body {
 
 }
 
+/* menu */
 header {
     position: fixed;
     top:0;
     width: 100%;
+    background-color: transparent;
+}
+
+
+.iconemenu {
+    display: none;
 }
 
 .headerativo {
@@ -50,16 +61,17 @@ header {
     margin-right: 80px;
     margin-top: 25px;
 }
+
 header nav, header img {
     margin:25px 80px 0 80px;
 }
-header, ul {
+header, header ul {
     display: flex;
     justify-content: space-between;
     align-items: center; 
 }
 
-ul {
+header ul {
     gap: 40px;
 }
 
@@ -72,24 +84,68 @@ nav li a {
 nav .login {
     border-radius: 10px;
     border: 1.5px solid rgb(255, 255, 255);
-    padding: 9px 28px 9px 28px;
+    padding: 9px 28px 9px 28px; 
+    font-weight: 900;
 }
 nav .login:hover {
-    background-color: #e7a0e7;
+    background-color: #ffffff;
 }
+
+nav .login:hover a {
+    background-image: linear-gradient(45deg, #7d8fc2, #a289c6, #e7a0e7, #fcc0de);
+    -webkit-background-clip: text;
+    background-size: 250% 250%;
+    animation: fundogradiente 14s ease infinite;
+    background-clip: text;
+    color: transparent;
+   
+}
+
+/* nav .login:hover {
+    background-color: #ffffff;
+    color:#2352d0;
+    
+}
+
 nav .login a:hover {
-    border-bottom:none;
-}
+    background-image: linear-gradient(45deg, #7d8fc2, #a289c6, #e7a0e7, #fcc0de);
+    -webkit-background-clip: text; 
+    background-size: 250% 250%;
+    animation: fundogradiente 14s ease infinite;
+    background-clip: text; 
+    color: transparent;
+    font-weight: 900;
+} */
+
 nav li a:hover {
     border-bottom: 2px solid white;
 }
 
 header img {
     width: 130px;
-    animation: pulse 2s  infinite;
+    animation: logoAnimada 2s infinite ;
 }
 
-
+@keyframes logoAnimada {
+    0% {
+        transform: scale(100%);
+    }
+    50% {
+        transform: scale(110%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+.container-img-propaganda {
+    display: flex;
+    align-items: flex-end;
+}
+.img-propaganda {   
+    height: 530px; 
+    transform: scaleX(-1); 
+    z-index: -1; 
+}
 footer {
     display: flex;
     justify-content: space-between;
@@ -99,6 +155,7 @@ footer {
 }
 footer img {
     width: 150px;
+    animation: logoAnimada 2s infinite ;
 }
 
 footer div, footer div ul {
@@ -107,7 +164,9 @@ footer div, footer div ul {
     gap: 5px;
 }
 
-
+.footer-coluna ul a {
+    text-decoration: none;
+}
 
 /* Seta para saber que tem que descer ou subir */
 /* TESTES */
@@ -135,4 +194,114 @@ footer div, footer div ul {
 @keyframes puloSetaInvertida {
     0%, 100% { transform: translateY(0) scaleY(-1); }
     50% { transform: translateY(5px) scaleY(-1); }
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 990px) {
+    .iconemenu {
+        display: block;
+    }
+    .iconemenu img {
+        width: 80px;
+    }
+
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+    nav {
+        display: none;
+    }
+    header div { 
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header, header ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    .navEspecial {
+        width: 100%;
+        background: linear-gradient(45deg, #7d8fc2,#a289c6,#e7a0e7,#fcc0de );
+    background-size: 250% 250%;
+    animation: fundogradiente 14s ease infinite;
+    }
+    nav li a {
+        font-size: 26px;
+    }
+
+    footer img {
+        width: 110px;
+    }
+
+    
+}
+
+@media screen and (max-width:850px) {
+    footer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-coluna {
+        display: none;
+    }
+
+    footer img {
+        width: 200px;
+    }
+
+    footer div {
+        display: flex;
+        align-items: center;
+    }
+
+    footer div p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+    .iconemenu img {
+        width: 70px;
+    }   
+    .seta {
+        display: none;
+    }
+    header nav, header img {
+        margin:25px 40px 0 40px;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .logo {
+        width: 120px;
+        height: auto;
+    }
+    .iconemenu img {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .logo {
+        display: none;
+    }
+    header nav, header img {
+        margin:25px 30px 0 30px;
+    }
+    * {
+    text-align: center;
+    }
+
 }

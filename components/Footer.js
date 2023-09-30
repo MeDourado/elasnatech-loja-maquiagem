@@ -1,7 +1,7 @@
 export const Footer = () => {
   return `
-    <div class="footer-column footer-logo">
-        <img src="../../assets/imgs/logo.png" class="logo">
+    <div>
+        <img src="../../assets/imgs/logo.png">
         <p>Descubra a beleza em cada detalhe.</p>
     </div>
     <div class="footer-coluna">
