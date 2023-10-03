@@ -21,13 +21,14 @@ export const Footer = () => {
         </ul>
     </div>
     <div class="footer-coluna footer-social">
-        <h2>Redes Sociais</h2>
+        <h2>Creditos das Imagens</h2>
         <ul>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Twitter</a>
+        <a href="https://www.flaticon.com/uicons">Icons</a>
+        <a href="https://www.freepik.com/author/azerbaijan-stockers">Mulher maquiando</a>
+        <a href="https://www.freepik.com/free-vector/isolated-make-up-icon-set_5754017.htm#query=maquiagem&position=13&from_view=search&track=sph"> Desenho - Itens de Maquiagem </a>
         </ul>
     </div>
+
 
 `;
 };

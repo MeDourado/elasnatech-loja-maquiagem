@@ -196,9 +196,23 @@ footer div, footer div ul {
     50% { transform: translateY(5px) scaleY(-1); }
 }
 
+@keyframes border-pulse {
+    0% {
+        border-color: #a289c6;
+    }
+    50% {
+        border-color: #e7a0e7; /* Cor alternativa da borda */
+    }
+    100% {
+        border-color: #fcc0de; /* Cor alternativa da borda */
+    }
+}
 
 /* Responsividade */
 @media screen and (max-width: 990px) {
+    .teste {
+        display: none;
+    }
     .iconemenu {
         display: block;
     }
@@ -210,9 +224,7 @@ footer div, footer div ul {
         width: 200px;
         height: auto;
     }
-    nav {
-        display: none;
-    }
+
     header div { 
         width: 100%;
         display: flex;
@@ -227,8 +239,8 @@ footer div, footer div ul {
     }
 
     .navEspecial {
-        width: 100%;
-        background: linear-gradient(45deg, #7d8fc2,#a289c6,#e7a0e7,#fcc0de );
+    width: 100%;
+    background: linear-gradient(45deg, #7d8fc2,#a289c6,#e7a0e7,#fcc0de );
     background-size: 250% 250%;
     animation: fundogradiente 14s ease infinite;
     }

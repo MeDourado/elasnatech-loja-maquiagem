@@ -19,7 +19,6 @@ main {
 main section {
     height:100vh;
     display: flex;
-    margin: 40px 0 40px 0;
     align-items: center;
 }
 
@@ -27,6 +26,7 @@ main section {
 .container-login {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
@@ -37,6 +37,7 @@ main section {
 
 form {
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 12px;
 }
@@ -57,7 +58,6 @@ form label, .container-login h1, form h6 a {
     font-weight: 900;
 }
 
-
 form input {
     border-radius: 10px;
     height: 50px;
@@ -67,19 +67,6 @@ form input {
     background-color: transparent;
     padding: 0 3px 0 3px;
 }
-
-@keyframes border-pulse {
-    0% {
-        border-color: #a289c6;
-    }
-    50% {
-        border-color: #e7a0e7; /* Cor alternativa da borda */
-    }
-    100% {
-        border-color: #fcc0de; /* Cor alternativa da borda */
-    }
-}
-
 
 
 form button {
@@ -96,22 +83,19 @@ form button {
 input:focus {
     outline: none;   
 }
+
 input:hover, input:active  {
     color: #fff;
     border: 1px solid #7d8fc2;
     background:#e7a0e7;
 }
+
 input:hover::placeholder {
     color:#fff;
 }
+
 form button:hover {
     background:#e7a0e7;
-}
-
-@media screen and (min-width:1580px){
-   .container-login {
-    width: 520px;
-   }
 }
 
 @media screen and (min-width:1160px){
@@ -126,29 +110,21 @@ form button:hover {
     }
 }
 
-@media screen and (max-width:897px){
-    .container-img-propaganda img {
-        height: 450px;
-    }
-}
-
-@media screen and (max-width:860px){
+@media screen and (max-width:861px){
     .container-img-propaganda img {
        display: none;
     }
-
     main section {
         justify-content: center;
         width: 100%;
     }
-   .container-login {
-    width:90%;  
-   }
-
-   form {
-    gap:19px;
-   }
-
+    .container-login {
+        width:90%;  
+       }
+    
+       form {
+        gap:19px;
+       }
 }
 
 @media screen and (max-width:414px){

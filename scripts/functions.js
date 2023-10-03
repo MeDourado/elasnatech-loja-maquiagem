@@ -7,10 +7,11 @@ function ativarMenu() {
 window.addEventListener("scroll", ativarMenu);
 
 function setaInversa() {
+  console.log("Chamei funcao");
   const alturaJanela = window.innerHeight;
   const posicaoScrool = scrollY;
   const alturaDocumento = document.documentElement.offsetHeight;
-  const teste = document.documentElement.scrollHeight;
+  console.log(posicaoScrool + alturaJanela, alturaDocumento);
   return posicaoScrool + alturaJanela >= alturaDocumento;
 }
 
@@ -19,8 +20,10 @@ window.addEventListener("scroll", () => {
   const seta = document.querySelector(".seta");
   console.log("oi");
   if (setaInversa() === true) {
+    console.log("Minha seta tem que ir para cima");
     seta.classList.add("seta-cima");
   } else {
+    console.log("Minha seta tem que ir para baixo");
     seta.classList.remove("seta-cima");
   }
 });
@@ -50,3 +53,18 @@ function verificarLarguraTela() {
 
 window.addEventListener("resize", verificarLarguraTela);
 verificarLarguraTela();
+
+// Function Trocar Imagem com Base no indice
+function mudarImagem(imagem, idx) {
+  // Encontre o elemento do card atual com base no índice
+  const card = document.querySelector(`[data-produto-id="${idx}"]`);
+  if (!card) {
+    console.error(`Card com índice ${idx} não encontrado.`);
+    return;
+  }
+
+  // Resto do seu código para atualizar a imagem no card
+  const mainImage = card.querySelector(".produto-imagens img");
+  mainImage.src = imagem;
+  mainImage.alt = `Imagem ${idx + 1}`;
+}

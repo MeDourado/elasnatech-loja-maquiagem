@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+    margin-top: 80px;
+
+}
+.container-produtos {
+    padding:60px;
+    display: flex;
+   flex-wrap: wrap;
+    gap:10px;
+}
+
+.produto-card {
+    width: 320px;
+    height: max-content; /* Altura fixa para todos os cards */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    padding: 15px 0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destacar os cards */
+}
+
+.produto-card h2, p, del {
+    color: #393c44;
+    text-transform: uppercase;
+}
+
+.container-imagens-produto {
+    display: flex;
+}
+
+.produto-imagens img {
+    max-width: 100%;
+    height: auto;
+}
+
+.adicionar-ao-carrinho {
+    border-radius: 10px;
+    border: 1px solid #7d8fc25b;
+    width: max-content;
+    padding: 10px 25px;
+    animation: fundogradiente 14s ease infinite;
+    background: linear-gradient(45deg, #7d8fc2, #a289c6, #e7a0e7, #fcc0de);
+    background-size: 250% 250%;
+    align-self: center;
+}
+
+.carousel-control-next-icon {
+    color: #ff0000; /* Substitua "#ff0000" pela cor desejada */
+  }
