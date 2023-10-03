@@ -1,12 +1,12 @@
-import { Navbar } from "./Navbar.js";
-import { Propaganda } from "./Propaganda.js";
-import { Footer } from "./Footer.js";
-import { Seta } from "./Seta.js";
-import { SobreMarca } from "./SobreMarca.js";
-import { ImgPropaganda } from "./ImgPropaganda.js";
-import { SecaoContato } from "./SecaoContato.js";
-import { Faq } from "./Faq.js";
-import { Produtos } from "./Produtos.js";
+import { Navbar } from "../components/Navbar.js";
+import { Propaganda } from "../components/Propaganda.js";
+import { Footer } from "../components/Footer.js";
+import { Seta } from "../components/Seta.js";
+import { SobreMarca } from "../components/SobreMarca.js";
+import { ImgPropaganda } from "../components/ImgPropaganda.js";
+import { SecaoContato } from "../components/SecaoContato.js";
+import { Faq } from "../components/Faq.js";
+import { Produtos } from "../components/Produtos.js";
 export {
   Navbar,
   Propaganda,
