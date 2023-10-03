@@ -31,25 +31,30 @@ window.addEventListener("scroll", () => {
 // Função para menu
 //.navEspecial
 function mostrarMenu() {
-  let ativo = true;
-  menu.classList.toggle("headerativo", (ativo = true));
+  const header = document.querySelector("header");
   const navList = document.querySelector("nav");
+
+  // Verifica se o menu está visível
   if (navList.style.display === "block") {
     navList.style.display = "none";
+    header.classList.remove("headerativo");
+    header.classList.add("headerinativo");
   } else {
     navList.style.display = "block";
+    header.classList.remove("headerinativo");
+    header.classList.add("headerativo");
   }
 }
 
 // Função - MENU SEMPRE ATIVO - quando não está com o menu mobile
-function verificarLarguraTela() {
-  const navList = document.querySelector("nav");
-  const larguraTela = window.innerWidth;
+// function verificarLarguraTela() {
+//   const navList = document.querySelector("nav");
+//   const larguraTela = window.innerWidth;
 
-  if (larguraTela >= 990) {
-    navList.style.display = "block";
-  }
-}
+//   if (larguraTela >= 990) {
+//     navList.style.display = "block";
+//   }
+// }
 
 window.addEventListener("resize", verificarLarguraTela);
 verificarLarguraTela();
