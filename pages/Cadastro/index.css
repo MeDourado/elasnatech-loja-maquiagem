@@ -98,6 +98,29 @@ form button:hover {
     background:#e7a0e7;
 }
 
+
+@media screen and (min-width:2001px){
+    .container-img-propaganda img {
+        height: 800px;
+    }
+
+}
+@media screen and (max-width:2000px){
+    .container-img-propaganda img {
+        height: 730px;
+    }
+
+}
+
+
+@media screen and (max-width:1600px){
+    .container-img-propaganda img {
+        height: 680px;
+    }
+
+}
+
+
 @media screen and (min-width:1160px){
     .container-img-propaganda img {
         height: 600px;

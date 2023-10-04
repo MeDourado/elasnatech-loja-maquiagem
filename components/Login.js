@@ -20,7 +20,7 @@ export const Login = () => {
     />
     <h6>
       Você já tem uma conta?
-      <a href="../Cadastro/index.html"> Cadastre-se</a>
+      <a href="../Cadastro/index.html">Cadastre-se  </a>
     </h6>
     <button type="submit" value="Login">ENTRAR</button>
   </form>`;
