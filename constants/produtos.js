@@ -39,4 +39,24 @@ export const produtos = [
       "../../assets/imgs/produto4.3.png",
     ],
   },
+  {
+    nome: "Brilho Labial",
+    descricao: 85.99,
+    preco: 36.99,
+    imagens: [
+      "../../assets/imgs/produto5.1.png",
+      "../../assets/imgs/produto5.2.png",
+      "../../assets/imgs/produto5.3.png",
+    ],
+  },
+  {
+    nome: "Brilho Labial",
+    descricao: 85.99,
+    preco: 36.99,
+    imagens: [
+      "../../assets/imgs/produto6.3.png",
+      "../../assets/imgs/produto6.2.png",
+      "../../assets/imgs/produto6.1.png",
+    ],
+  },
 ];
