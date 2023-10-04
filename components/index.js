@@ -9,6 +9,7 @@ import { Faq } from "../components/Faq.js";
 import { Produtos } from "../components/Produtos.js";
 import { Login } from "../components/Login.js";
 import { Cadastro } from "../components/Cadastro.js";
+import { CategoriaProduto } from "../components/CategoriaProduto.js";
 export {
   Navbar,
   Propaganda,
@@ -21,4 +22,5 @@ export {
   Produtos,
   Login,
   Cadastro,
+  CategoriaProduto,
 };
