@@ -51,8 +51,9 @@ main {
     margin-top: 60px;
     display: flex;
    flex-wrap: wrap;
-    gap:5px;
-    justify-content: center;
+    justify-content: space-between;
+    gap:4px;
+    align-items: center;
 }
 
 .produto-card {
