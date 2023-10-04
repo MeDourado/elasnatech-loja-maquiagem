@@ -12,7 +12,7 @@
 
 body {
     overflow-x: hidden;
-    height: auto;
+    min-height: 100vh;
     background: linear-gradient(45deg, #7d8fc2,#a289c6,#e7a0e7,#fcc0de );
     background-size: 250% 250%;
     animation: fundogradiente 14s ease infinite;
@@ -57,7 +57,10 @@ header {
     animation: fundogradiente 14s ease infinite;
     padding-bottom: 10px;
 }
+footer {
+    bottom: 0;
 
+}
 
 .cards-sobre, footer {
     margin-left:80px;

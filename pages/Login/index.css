@@ -108,16 +108,62 @@ form button:hover {
     background:#e7a0e7;
 }
 
-@media screen and (min-width:1580px){
-   .container-login {
-    width: 520px;
-   }
+@media screen and (min-height:1080px){
+    .container-img-propaganda img {
+        height: 730px;
+    }
+    .container-login {
+        width: 600px;
+        height: 420px;
+        padding: 20px;
+       }
+
 }
 
-@media screen and (min-width:1160px){
+@media screen and (max-width:2000px){
     .container-img-propaganda img {
-        height: 600px;
+        height: 730px;
     }
+    .container-login {
+        width: 600px;
+        height: 420px;
+        padding: 20px;
+       }
+
+}
+
+
+@media screen and (max-width:1600px){
+    .container-img-propaganda img {
+        height: 680px;
+    }
+    .container-login {
+        width: 500px;
+        height: 380px;
+        padding: 20px;
+       }
+}
+
+@media screen and (max-width:1360px){
+    .container-img-propaganda img {
+        height: 630px;
+    }
+    .container-login {
+        width: 400px;
+        height: 380px;
+        padding: 20px;
+       }
+}
+
+@media screen and (max-width:1160px){
+    .container-img-propaganda img {
+        height: 540px;
+    }
+    .container-login {
+        width: 380px;
+        height: 380px;
+        padding: 20px;
+       }
 }
 
 @media screen and (max-width:946px){
@@ -126,13 +172,7 @@ form button:hover {
     }
 }
 
-@media screen and (max-width:897px){
-    .container-img-propaganda img {
-        height: 450px;
-    }
-}
-
-@media screen and (max-width:860px){
+@media screen and (max-width:900px){
     .container-img-propaganda img {
        display: none;
     }
@@ -142,7 +182,8 @@ form button:hover {
         width: 100%;
     }
    .container-login {
-    width:90%;  
+    width:90%; 
+    height: max-content; 
    }
 
    form {

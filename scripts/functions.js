@@ -36,18 +36,3 @@ function mostrarMenu() {
     header.classList.add("headerativo");
   }
 }
-
-window.addEventListener("resize", verificarLarguraTela);
-verificarLarguraTela();
-
-function mudarImagem(imagem, idx) {
-  const card = document.querySelector(`[data-produto-id="${idx}"]`);
-  if (!card) {
-    console.error(`Card com índice ${idx} não encontrado.`);
-    return;
-  }
-
-  const mainImage = card.querySelector(".produto-imagens img");
-  mainImage.src = imagem;
-  mainImage.alt = `Imagem ${idx + 1}`;
-}

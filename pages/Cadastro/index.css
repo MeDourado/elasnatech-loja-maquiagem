@@ -23,7 +23,7 @@ main section {
 }
 
 
-.container-login {
+.container-cadastro {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
@@ -48,7 +48,7 @@ form h6 {
     word-break: break-word;
 }
 
-form label, .container-login h1, form h6 a {
+form label, .container-cadastro h1, form h6 a {
     background-image: linear-gradient(45deg, #7d8fc2, #a289c6, #e7a0e7, #fcc0de);
     -webkit-background-clip: text; 
     background-size: 250% 250%;
@@ -118,7 +118,7 @@ form button:hover {
         justify-content: center;
         width: 100%;
     }
-    .container-login {
+    .container-cadastro {
         width:90%;  
        }
     

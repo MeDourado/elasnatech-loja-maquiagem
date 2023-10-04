@@ -7,6 +7,8 @@ import { ImgPropaganda } from "../components/ImgPropaganda.js";
 import { SecaoContato } from "../components/SecaoContato.js";
 import { Faq } from "../components/Faq.js";
 import { Produtos } from "../components/Produtos.js";
+import { Login } from "../components/Login.js";
+import { Cadastro } from "../components/Cadastro.js";
 export {
   Navbar,
   Propaganda,
@@ -17,4 +19,6 @@ export {
   SecaoContato,
   Faq,
   Produtos,
+  Login,
+  Cadastro,
 };

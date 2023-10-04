@@ -12,7 +12,7 @@ main {
     padding:60px;
     display: flex;
    flex-wrap: wrap;
-    gap:10px;
+    gap:5px;
 }
 
 .produto-card {
@@ -21,7 +21,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
     flex-direction: column;
     padding: 15px 0;
     border-radius: 5px;

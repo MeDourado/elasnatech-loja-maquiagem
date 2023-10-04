@@ -173,23 +173,54 @@ input:hover, input:active {
 
 /* Responsividade */
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1480px) {
     .container-propaganda {
-        margin-top: 170px;
+        margin-top: 130px;
         height: auto;
         align-items:flex-end;
     }
    .img-propaganda {
-    height: 350px;
+    height: 500px;
    }
    .propaganda {
     width: 450px;
    }
    .propaganda h2 {
-    font-size: 1.7rem;
+    font-size: 2.1rem;
    }
    .propaganda h4 {
-    font-size: 1rem;
+    font-size: 1.4rem;
+   }
+   .container-caracteristicas div img {
+    padding-top: 0px;
+    max-height: 50px;
+}
+.container-input-botao {
+    width: 340px;
+}
+.card-sobre {
+    width: 300px;
+}
+
+} 
+
+@media screen and (max-width: 1260px) {
+    .container-propaganda {
+        margin-top: 140px;
+        height: auto;
+        align-items:flex-end;
+    }
+   .img-propaganda {
+    height: 420px;
+   }
+   .propaganda {
+    width: 490px;
+   }
+   .propaganda h2 {
+    font-size: 1.9rem;
+   }
+   .propaganda h4 {
+    font-size: 1.2rem;
    }
    .container-caracteristicas div img {
     padding-top: 0px;
@@ -206,7 +237,7 @@ input:hover, input:active {
 
 @media screen and (max-width:939px){
     .img-propaganda {
-        height: 310px;
+        height: 390px;
        }
        .propaganda h2 {
         font-size: 1.4rem;
@@ -226,7 +257,7 @@ input:hover, input:active {
     }
 
     .img-propaganda {
-        height: 290px;
+        height: 360px;
        }
     .propaganda h2 {
         font-size: 1.6rem;
