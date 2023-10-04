@@ -52,7 +52,7 @@ export const Produtos = () => {
       </div>
       <div class="produto-informacoes">
         <p>De: <del>${produto.descricao}<del></p>
-        <p>Preço: R$ ${produto.preco.toFixed(2)}</p>
+        <p>Por: R$ ${produto.preco.toFixed(2)}</p>
       </div>
       <button class="adicionar-ao-carrinho">COMPRAR</button>
     </div>
