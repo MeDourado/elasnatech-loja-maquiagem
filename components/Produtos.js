@@ -51,7 +51,7 @@ export const Produtos = () => {
         </button>
       </div>
       <div class="produto-informacoes">
-        <p>De: <del>${produto.descricao}<del></p>
+        <p>Descrição: ${produto.descricao}</p>
         <p>Por: R$ ${produto.preco.toFixed(2)}</p>
       </div>
       <button class="adicionar-ao-carrinho">COMPRAR</button>

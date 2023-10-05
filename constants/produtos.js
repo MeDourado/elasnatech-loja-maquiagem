@@ -1,7 +1,7 @@
 export const produtos = [
   {
-    nome: "Kit de Pincel",
-    descricao: 98.99,
+    nome: "Kit de Pincéis",
+    descricao: "5 pincéis",
     preco: 19.99,
     imagens: [
       "../../assets/imgs/produto1.1.png",
@@ -10,8 +10,8 @@ export const produtos = [
     ],
   },
   {
-    nome: "Lapis de Olho",
-    descricao: 30.99,
+    nome: "Lápis de Olho",
+    descricao: "Azul, ponta fina ",
     preco: 9.99,
     imagens: [
       "../../assets/imgs/produto2.1.png",
@@ -21,7 +21,7 @@ export const produtos = [
   },
   {
     nome: "Paleta de Cores",
-    descricao: 189.99,
+    descricao: "Tons modernos",
     preco: 58.99,
     imagens: [
       "../../assets/imgs/produto3.1.png",
@@ -31,7 +31,7 @@ export const produtos = [
   },
   {
     nome: "Lip Tint",
-    descricao: 29.99,
+    descricao: "Suave",
     preco: 19.99,
     imagens: [
       "../../assets/imgs/produto4.1.png",
@@ -40,8 +40,8 @@ export const produtos = [
     ],
   },
   {
-    nome: "Brilho Labial Cremoso",
-    descricao: 89.99,
+    nome: "Brilho Labial ",
+    descricao: "Cremoso",
     preco: 39.99,
     imagens: [
       "../../assets/imgs/produto5.1.png",
@@ -50,8 +50,8 @@ export const produtos = [
     ],
   },
   {
-    nome: "Brilho Labial Vermelho",
-    descricao: 99.99,
+    nome: "Brilho Labial",
+    descricao: "Vermelho",
     preco: 29.99,
     imagens: [
       "../../assets/imgs/produto6.3.png",
@@ -61,7 +61,7 @@ export const produtos = [
   },
   {
     nome: "Brilho LabiaL",
-    descricao: 99.99,
+    descricao: "Marrom rosado",
     preco: 29.99,
     imagens: [
       "../../assets/imgs/produto7.1.png",
@@ -71,7 +71,7 @@ export const produtos = [
   },
   {
     nome: "Delineador Fino",
-    descricao: 199.99,
+    descricao: "Ponta fina",
     preco: 29.99,
     imagens: [
       "../../assets/imgs/produto8.1.png",
@@ -81,7 +81,7 @@ export const produtos = [
   },
   {
     nome: "Batom Suave",
-    descricao: 159.99,
+    descricao: "Hidrante",
     preco: 89.99,
     imagens: [
       "../../assets/imgs/produto9.1.png",
@@ -91,7 +91,7 @@ export const produtos = [
   },
   {
     nome: "Kit Sombra",
-    descricao: 89.99,
+    descricao: "Tons escuros",
     preco: 79.99,
     imagens: [
       "../../assets/imgs/produto10.1.png",
@@ -101,7 +101,7 @@ export const produtos = [
   },
   {
     nome: "Blush Compacto",
-    descricao: 69.99,
+    descricao: "Pele lisa",
     preco: 49.99,
     imagens: [
       "../../assets/imgs/produto11.1.png",
@@ -111,7 +111,7 @@ export const produtos = [
   },
   {
     nome: "Paleta Floral",
-    descricao: 159.99,
+    descricao: "Tons de outono",
     preco: 89.99,
     imagens: [
       "../../assets/imgs/produto12.1.png",

@@ -174,12 +174,14 @@ footer div ul {
 
 .container-seta {  
     width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     position: fixed;    
     bottom: 0;
 }
 .seta {
     height: 50px;
-    left: 50%;
     z-index: 999;
     animation: puloSeta 1s linear infinite;
 }
