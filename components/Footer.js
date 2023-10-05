@@ -25,7 +25,7 @@ export const Footer = () => {
         <ul>
         <a href="https://www.flaticon.com/uicons" target="_blank" >Icons</a>
         <a href="https://www.freepik.com/author/azerbaijan-stockers" target="_blank">Mulher maquiando</a>
-        <a href="https://www.freepik.com/free-vector/isolated-make-up-icon-set_5754017.htm#query=maquiagem&position=13&from_view=search&track=sph" target="_blank"> Desenho - Itens de Maquiagem </a>
+        <a href="https://www.freepik.com/free-vector/isolated-make-up-icon-set_5754017.htm#query=maquiagem&position=13&from_view=search&track=sph" target="_blank">Itens de Maquiagem </a>
         </ul>
     </div>
 
