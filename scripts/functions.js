@@ -38,7 +38,6 @@ function menuAtivo() {
   const tamanhoTela = window.innerWidth;
   const navList = document.querySelector("nav");
   if (tamanhoTela >= 990) {
-    console.log("entrei aq");
     navList.style.display = "block";
   } else {
     navList.style.display = "none";

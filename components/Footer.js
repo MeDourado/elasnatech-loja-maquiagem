@@ -15,9 +15,9 @@ export const Footer = () => {
     <div class="footer-coluna">
         <h2>Sobre</h2>
          <ul>
-         <a href="#">Cadastro</a>
-         <a href="#">Contato</a>
-         <a href="#">Home</a>
+         <a href="../Cadastro/index.html">Cadastro</a>
+         <a href="../Contato/index.html">Contato</a>
+         <a href="../TrabalheConosco/index.html">Trabalhe-Conosco</a>
         </ul>
     </div>
     <div class="footer-coluna footer-social">

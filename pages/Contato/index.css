@@ -83,6 +83,11 @@ main {
     font-size: 1.2rem;
     cursor: pointer;
 }
+.formulario-faleconosco form button:hover  {
+    color:#fff;
+    background:#e7a0e7;
+
+}
 
 .formulario-faleconosco form input {
     width: 100%;
@@ -91,6 +96,20 @@ main {
     border-radius: 19px;
     color:#e7a0e7;
     padding-left: 6px;
+}
+
+.formulario-faleconosco form input:focus, .formulario-faleconosco form textarea {
+    outline: none;   
+
+}
+
+.formulario-faleconosco form input:active,.formulario-faleconosco form input:hover   {
+    color: #fff;
+    border: 1px solid #7d8fc2;
+    background:#e7a0e7;
+}
+.formulario-faleconosco form input:hover::placeholder {
+    color:#fff;
 }
 
 .formulario-faleconosco form textarea {
