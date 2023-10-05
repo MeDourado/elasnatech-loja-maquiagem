@@ -1,0 +1,218 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #fff;
+}
+.historia-sobre-mim {
+    background-color: #ffffff;
+    padding: 0 80px;
+    
+
+}
+
+.logo-elasnatech{
+    width: 200px;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7d8fc2,#a289c6,#e7a0e7,#fcc0de );
+    background-size: 250% 250%;
+    animation: fundogradiente 14s ease infinite;
+}
+.logo-elasnatech img {
+    width: 150px;
+}
+.container-informacoes-sobre-mim {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: space-between;
+}
+.container-informacoes-sobre-mim div {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.container-informacoes-sobre-mim div h2,  .texto-elasnatech h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+.container-informacoes-sobre-mim div p, .texto-elasnatech p {
+    font-size: 1.4rem;
+    color: #393c44;
+    text-align: center;
+    text-align: justify;
+
+
+}
+.sobre-mim {
+    display: flex;  
+    margin-top: 130px;
+    padding: 80px;
+    gap:25px;
+    justify-content: space-between;
+    height: max-content;
+    background-color: #fff;
+
+}
+
+.container-elasnatech {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    align-items: start;
+    overflow-x: hidden;
+
+}
+.redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+.icone-redesocial {
+    width: 60px;
+}
+.texto-elasnatech {
+    width: 70%;
+}
+
+.container-detalhes-perfil {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.container-perfil {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap:30px;
+}
+.container-perfil h1, .container-detalhes-perfil h2, .container-informacoes-sobre-mim div h2, .texto-elasnatech h2 {
+    background-image: linear-gradient(45deg, #7d8fc2, #a289c6, #e7a0e7, #fcc0de);
+    -webkit-background-clip: text; 
+    background-size: 250% 250%;
+    animation: fundogradiente 14s ease infinite;
+    background-clip: text; 
+    color: transparent;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.foto-perfil{
+    width: 280px;
+    border-radius: 50%;  
+    box-shadow: 0px 4px 4px 0cqmin rgba(2, 0, 0, 0.3);
+  
+}
+
+.container-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.habilidade {
+    width: 150px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #7d8fc2,#a289c6,#e7a0e7,#fcc0de );
+    background-size: 250% 250%;
+    animation: fundogradiente 14s ease infinite;
+    box-shadow: 0px 4px 4px 5px rgba(2, 0, 0, 0.074);
+}
+.habilidade img {
+    max-width: 100px;
+}
+.container-detalhes-perfil h2 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+@media screen and (max-width:1010px){
+    .sobre-mim {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .container-habilidades {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:930px){
+
+    .logo-elasnatech {
+        width: 140px;
+        height: 140px;
+    }
+    .logo-elasnatech img {
+        width:100px;
+
+    }
+
+
+}
+
+@media screen and (max-width:790px){
+    .sobre-mim {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .container-habilidades {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-detalhes-perfil h2 {
+        font-size: 1.8rem;
+    }
+    .container-informacoes-sobre-mim {
+        display: flex;
+        flex-direction: column;
+       justify-content: space-between;
+       gap:30px;
+    }
+    .container-elasnatech {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-informacoes-sobre-mim div p, .texto-elasnatech p {
+        font-size: 1.2rem;
+    
+    }
+    .texto-elasnatech {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:500px){
+
+    .container-detalhes-perfil h2 {
+        font-size: 1.4rem;
+        font-weight: 900;
+    }
+
+}

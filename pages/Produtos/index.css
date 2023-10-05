@@ -137,7 +137,18 @@ main {
 }
 @media screen and (max-width:817px){
     .container-produtos {
-flex-direction: column;    }
+    flex-direction: column;   
+    align-items: center; 
+
+}
+.categoria-produto {
+    width: 100px;
+    height: 100px;
+}
+.categoria-produto h2 {
+    font-size: 1.5rem;
+}
+
 }
 @media screen and (max-width:570px){
     main {
@@ -152,6 +163,13 @@ flex-direction: column;    }
 @media screen and (max-width:450px){
     .produto-card {
         width: 230px; 
+    }
+    .categoria-produto {
+        width: 80px;
+        height: 80px;
+    }
+    .categoria-produto h2 {
+        font-size: 1.2rem;
     }
 
 }

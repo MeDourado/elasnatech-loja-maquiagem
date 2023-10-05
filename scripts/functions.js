@@ -6,11 +6,9 @@ function ativarMenu() {
 window.addEventListener("scroll", ativarMenu);
 
 function setaInversa() {
-  console.log("Chamei funcao");
   const alturaJanela = window.innerHeight;
   const posicaoScrool = scrollY;
   const alturaDocumento = document.documentElement.offsetHeight;
-  console.log(posicaoScrool + alturaJanela, alturaDocumento);
   return posicaoScrool + alturaJanela >= alturaDocumento;
 }
 
@@ -26,13 +24,25 @@ window.addEventListener("scroll", () => {
 function mostrarMenu() {
   const header = document.querySelector("header");
   const navList = document.querySelector("nav");
+
   if (navList.style.display === "block") {
     navList.style.display = "none";
     header.classList.remove("headerativo");
-    header.classList.add("headerinativo");
   } else {
     navList.style.display = "block";
-    header.classList.remove("headerinativo");
     header.classList.add("headerativo");
   }
 }
+
+function menuAtivo() {
+  const tamanhoTela = window.innerWidth;
+  const navList = document.querySelector("nav");
+  if (tamanhoTela >= 990) {
+    console.log("entrei aq");
+    navList.style.display = "block";
+  } else {
+    navList.style.display = "none";
+  }
+}
+
+window.addEventListener("resize", menuAtivo);

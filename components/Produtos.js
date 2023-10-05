@@ -2,7 +2,7 @@ import { produtos } from "../constants/produtos.js";
 
 export const Produtos = () => {
   const produtosHTML = produtos.map((produto, index) => {
-    const carouselId = `carouselExample${index}`; // ID único do carrossel
+    const carouselId = `carouselExample${index}`;
 
     return `  
     <div class="produto-card" data-produto-id="${index}">

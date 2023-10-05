@@ -21,7 +21,7 @@ export const Footer = () => {
         </ul>
     </div>
     <div class="footer-coluna footer-social">
-        <h2>Creditos das Imagens</h2>
+        <h2>Creditos</h2>
         <ul>
         <a href="https://www.flaticon.com/uicons" target="_blank" >Icons</a>
         <a href="https://www.freepik.com/author/azerbaijan-stockers" target="_blank">Mulher maquiando</a>

@@ -10,6 +10,8 @@ import { Produtos } from "../components/Produtos.js";
 import { Login } from "../components/Login.js";
 import { Cadastro } from "../components/Cadastro.js";
 import { CategoriaProduto } from "../components/CategoriaProduto.js";
+import { Habilidades } from "../components/Habilidades.js";
+import { Historia } from "../components/Historia.js";
 export {
   Navbar,
   Propaganda,
@@ -23,4 +25,6 @@ export {
   Login,
   Cadastro,
   CategoriaProduto,
+  Habilidades,
+  Historia,
 };
