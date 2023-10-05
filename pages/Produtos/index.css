@@ -4,10 +4,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    overflow-y: hidden;
-
-    margin: 80px;
-
+    overflow-x: hidden;
 }
 
 /* PERSONALIZAÇÃO CATEGORIAS */
@@ -17,6 +14,7 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     gap:5px;
+    margin: 0 80px;
     
 }
 
@@ -54,6 +52,7 @@ main {
     margin-top: 60px;
     justify-content:space-between;
     gap:18px;
+    padding: 0 80px;
 }
 
 .produto-card {
@@ -140,6 +139,7 @@ main {
     flex-direction: column;   
     align-items: center; 
 
+
 }
 .categoria-produto {
     width: 100px;
@@ -151,18 +151,23 @@ main {
 
 }
 @media screen and (max-width:570px){
+    .container-produtos {
+        padding: 0px;
+    }
     main {
         margin-top: 100px;
     }
     .produto-card {
         width: 290px; 
+
+
     }
 
 }
 
 @media screen and (max-width:450px){
     .produto-card {
-        width: 230px; 
+        width: 86%; 
     }
     .categoria-produto {
         width: 80px;
@@ -171,6 +176,7 @@ main {
     .categoria-produto h2 {
         font-size: 1.2rem;
     }
+
 
 }
 
